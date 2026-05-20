@@ -1,5 +1,12 @@
 import HomeSlider from "@/app/components/HomeSlider";
 import CatSlider from "@/app/components/CatSlider";
+import PopularProducts from "@/app/components/PopularProducts";
+import Banners from "@/app/components/Banners";
+import ProductRow from "@/app/components/ProductRow";
+import Footer from "@/app/components/Footer";
+
+import { FaLongArrowAltRight } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,6 +15,17 @@ export default function Home() {
     <HomeSlider />
     
     <CatSlider />
+
+    <PopularProducts />
+
+    <Banners />
+
+    <ProductRow title={"Latest Products"} />
+    <ProductRow title={"Featured Products"} />
+    <ProductRow title={"Breaksfast & Dairy"} />
+
+      <Footer />
+    
   </div>
 
 

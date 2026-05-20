@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #02B290;   /* Removed quotes */
+  --color-primary: #02b290; /* Removed quotes */
   --color-secondary: #353535; /* Removed quotes */
 }
 
@@ -10,13 +10,37 @@
   margin: auto;
 }
 
-.swiper-button-prev, .swiper-button-next {
-    width: 40px !important;
-    height: 40px !important;
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 8px;
-    color: #02B290;
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 8px;
+  color: #02b290;
 }
-.swiper-button-prev:hover, .swiper-button-next:hover{@apply !bg-primary}
-.swiper-button-prev:hover svg, .swiper-button-next:hover svg{color: #fff !important}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  @apply !bg-primary;
+}
+.swiper-button-prev:hover svg,
+.swiper-button-next:hover svg {
+  color: #fff !important;
+}
+
+.css-1qltlow-MuiTabs-indicator {
+  background-color: #02b290 !important;
+}
+.css-1usuzwp-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #02b290 !important;
+  font-weight: 700;
+}
+
+.btn-border-g {
+  border: 1px solid #02b290 !important;
+  color: #02b290 !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  width: 100% !important;
+}
+.btn-border-g:hover {background-color: #02b290 !important; color: #fff !important; border: none !important}
