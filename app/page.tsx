@@ -24,7 +24,7 @@ export default function Home() {
     <ProductRow title={"Featured Products"} />
     <ProductRow title={"Breaksfast & Dairy"} />
 
-      <Footer />
+    
     
   </div>
 
