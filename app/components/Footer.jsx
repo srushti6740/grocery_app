@@ -5,6 +5,7 @@ import { BsWallet2 } from "react-icons/bs";
 import { IoGiftOutline } from "react-icons/io5";
 import { BiSupport } from "react-icons/bi";
 import { CiChat1 } from "react-icons/ci";
+import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-[#FAFAFA] py-8">
@@ -69,7 +70,9 @@ const Footer = () => {
         <div className="flex items-center justify-between py-8 gap-2">
           <div className="col1 flex-col gap-4 border-r-[1px] border-[rgba(0,0,0,0.2)] w-[25%]">
             <h3 className="font-[600] py-3">Contact Us</h3>
-            <p>ClassyShop- Mega Super Store <br /> 507 Union Trade Center France</p>
+            <p>
+              ClassyShop- Mega Super Store <br /> 507 Union Trade Center France
+            </p>
             <p className="py-2">sales@yourcompany.com</p>
             <h2 className="text-primary font-bold">(+91) 96456 84654</h2>
 
@@ -81,9 +84,35 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="col2 flex-col w-[30%]">
-            
-          </div> 
+          <div className="col2 flex flex-col w-[20%]">
+            <h3 className="font-[600] text-[17px] py-2">Products</h3>
+            <Link href={"/"} className="py-1">Price Drop</Link>
+            <Link href={"/"} className="py-1">New Products</Link>
+            <Link href={"/"} className="py-1">Best Sales</Link>
+            <Link href={"/"} className="py-1">Contact Us</Link>
+            <Link href={"/"} className="py-1">Sitemap</Link>
+          </div>
+
+          <div className="col2 flex flex-col w-[20%]">
+            <h3 className="font-[600] text-[17px] py-2">Our Company</h3>
+            <Link href={"/"} className="py-1">Price Drop</Link>
+            <Link href={"/"} className="py-1">New Products</Link>
+            <Link href={"/"} className="py-1">Best Sales</Link>
+            <Link href={"/"} className="py-1">Contact Us</Link>
+            <Link href={"/"} className="py-1">Sitemap</Link>
+          </div>
+          <div className="col2 flex flex-col w-[30%]">
+            <h3 className="text-gray-900 text-[17px] py-3 font-[600]">Subscribe Newsletter</h3>
+            <p>
+              Subscribe to our newsletter to get news about special discourts.
+            </p>
+            <input type="text" placeholder="    Your Email Address" className="border-1 py-2 rounded mt-3" />
+            <div>
+            <button className="bg-primary text-white py-2 mt-3 px-4 rounded">Subscribe</button>
+            </div>
+            <div className="flex gap-1 py-2">
+            <input type="checkbox" /> <p>I agree to the terms and condition and the privacy policy</p></div>
+          </div>
         </div>
       </div>
     </footer>

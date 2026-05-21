@@ -3,11 +3,13 @@ import React from "react";
 import Search from "./Search";
 import { CiHeart } from "react-icons/ci";
 import { IoBagAddOutline } from "react-icons/io5";
-
+import Nav from "@/app/components/Nav.jsx";
   
 const Header = () => {
   return (
-    <header>
+    <div className="headerWrapper py-3 sticky top-0 z-50 bg-white ">
+    
+    <header className="border-b-[1px] border-[rgba(0,0,0,0.1)]">
       <div className="container flex items-center justify-between py-3">
         <div className="logo">
           <Link href={"/"}>
@@ -43,6 +45,9 @@ const Header = () => {
       </div>
      
     </header>
+
+       <Nav/>
+    </div>
   );
 };
 

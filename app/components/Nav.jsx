@@ -4,7 +4,7 @@ import { FaAngleDown } from "react-icons/fa";
 const Nav = () => {
   return (
     <nav>
-      <div className="container flex items-center justify-between gap-7">
+      <div className="container flex items-center pt-3 justify-between gap-7">
         <Link
           href="/"
           className="text-[16px] text-gray-800 font-[600]  hover:text-primary"
