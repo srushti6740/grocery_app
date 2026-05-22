@@ -12,53 +12,53 @@ const Nav = () => {
           Home
         </Link>
         <Link
-          href="/"
+          href="/products"
           className="text-[16px] text-gray-800 font-[600] hover:text-primary"
         >
           Fruits & Vegetables
         </Link>
         <Link
-          href="/"
+          href="/products"
           className="text-[16px] text-gray-800 font-[600] hover:text-primary"
         >
           Meats & Seafood
         </Link>
         <Link
-          href="/"
+          href="/products"
           className="text-[16px] text-gray-800 font-[600] hover:text-primary"
         >
           Breaksfast & Dairy
         </Link>
         <Link
-          href="/"
+          href="/products"
           className="text-[16px] text-gray-800 font-[600] hover:text-primary"
         >
           Breads & Bakery
         </Link>
         <Link
-          href="/"
+          href="/products"
           className="text-[16px] text-gray-800 font-[600] hover:text-primary"
         >
           Beverages
         </Link>
         <Link
-          href="/"
+          href="/products"
           className="text-[16px] text-gray-800 font-[600] hover:text-primary"
         >
           Frozen Foods
         </Link>
 
         <Link
-          href="/"
+          href="/products"
           className="text-[16px] text-gray-800 font-[600] hover:text-primary"
         >
           Biscuits & Snacks
         </Link>
         <Link
-          href="/"
+          href="/products"
           className="text-[16px] text-gray-800 font-[600] hover:text-primary"
         >
-          Grocery & Staples
+          Grocery & Staples 
         </Link>
         <Link href="/" className="text-[16px] text-gray-800">
           Home

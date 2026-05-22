@@ -12,7 +12,7 @@ const ProductRow = (props) => {
               <h2 className="text-[20px] text-gray-800 font-[600]">
                {props?.title}
               </h2>
-              <Link href={"/"}><p className="flex items-center text-center hover:text-primary">View All <span> <FaLongArrowAltRight size={20} /> </span></p></Link>
+              <Link href={"/products"}><p className="flex items-center text-center hover:text-primary">View All <span> <FaLongArrowAltRight size={20} /> </span></p></Link>
             </div>
         <ProductSlider />
       </div>
