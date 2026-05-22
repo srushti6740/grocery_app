@@ -1,14 +1,15 @@
 "use client"
 import React from 'react'
-import ProductDetails from '../ProductDetails'
+import ProductDetails from '../../components/ProductDetails'
 
-const productDetails = () => {
+
+const productDetails = ({ params }) => {
   return (
-    <section>
+    <section className='py-1 bg-white gap-10'>
       <div className="container">
-      
 
         <ProductDetails />
+
       </div>
     </section>
   )
