@@ -7,10 +7,10 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
-import { Collapse } from "react-collapse";  
+import { Collapse } from "react-collapse";
 import { MdKeyboardArrowUp } from "react-icons/md";
-import RangeSlider from 'react-range-slider-input';
-import 'react-range-slider-input/dist/style.css';
+import RangeSlider from "react-range-slider-input";
+import "react-range-slider-input/dist/style.css";
 
 const Sidebar = () => {
   const [isOpenFilter, setIsOpenFilter] = useState(true);
@@ -30,11 +30,7 @@ const Sidebar = () => {
             className="!min-w-[30px] !w-[30px] !h-[30px] !rounded-full"
             onClick={() => setIsOpenFilter(!isOpenFilter)}
           >
-          {
-            isOpenFilter === true ? <MdKeyboardArrowUp /> :  <FaAngleDown />
-          }
-
-           
+            {isOpenFilter === true ? <MdKeyboardArrowUp /> : <FaAngleDown />}
           </Button>
         </div>
         <Collapse isOpened={isOpenFilter}>
@@ -75,13 +71,19 @@ const Sidebar = () => {
           <h3 className="text-[16px] font-[600] text-gray-700 py-5">
             Filter By Price
           </h3>
-          
-             <RangeSlider value={price} onInput={setPrice} min={100} max={30000} step={5} />
-             <div className="flex item-center justify-between mt-2">
+
+          <RangeSlider
+            value={price}
+            onInput={setPrice}
+            min={100}
+            max={30000}
+            step={5}
+          />
+          <div className="flex item-center justify-between mt-2">
             <span>${price[0]}</span>
             <span>${price[1]}</span>
           </div>
-        </div>               
+        </div>
         <Collapse isOpened={isPriceFilter}>
           <div className="flex items-center justify-between mb-3 mt-5">
             <h3 className="text-[16px] font-[600] text-gray-700">
@@ -94,23 +96,23 @@ const Sidebar = () => {
           <Stack spacing={1}>
             <div className="item flex items-center">
               <FormControlLabel control={<Checkbox />} />
-              <Rating name="read-only" value={5} readOnly  />
+              <Rating name="read-only" value={5} readOnly />
             </div>
             <div className="item flex items-center">
               <FormControlLabel control={<Checkbox />} />
-              <Rating name="read-only" value={4} readOnly  />
+              <Rating name="read-only" value={4} readOnly />
             </div>
             <div className="item flex items-center">
               <FormControlLabel control={<Checkbox />} />
-              <Rating name="read-only" value={3} readOnly  />
+              <Rating name="read-only" value={3} readOnly />
             </div>
             <div className="item flex items-center">
               <FormControlLabel control={<Checkbox />} />
-              <Rating name="read-only" value={2} readOnly  />
+              <Rating name="read-only" value={2} readOnly />
             </div>
             <div className="item flex items-center">
               <FormControlLabel control={<Checkbox />} />
-              <Rating name="read-only" value={1} readOnly  />
+              <Rating name="read-only" value={1} readOnly />
             </div>
           </Stack>
         </Collapse>
