@@ -9,6 +9,7 @@ import ProductZoom from "./ProductZoom";
 import { Button } from "@mui/material";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { LuHeart } from "react-icons/lu";
+import QtyBox from "./QtyBox";
 
 const ProductDetails = () => {
   return (
@@ -48,7 +49,7 @@ const ProductDetails = () => {
         </p>
 
         <div className="flex gap-3 py-2 items-center">
-          <p className="text-[18px] text-red-600 font-[700]">$25.99</p>
+          <QtyBox />
          <Button className="!bg-primary !text-white"><HiOutlineShoppingCart size={20} className="mx-1"/> Add to Cart</Button>
          <div className="bg-gray-200 p-2 rounded-full"><LuHeart className="text-gray-600" size={20}/></div>
         </div>
