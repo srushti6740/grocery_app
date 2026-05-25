@@ -8,11 +8,11 @@ const ProductRow = (props) => {
     <div>
       <section className="bg-white py-4">
       <div className="container">
-         <div className="flex justify-between">
+         <div className="flex items-center justify-between gap-3">
               <h2 className="text-[20px] text-gray-800 font-[600]">
                {props?.title}
               </h2>
-              <Link href={"/products"}><p className="flex items-center text-center hover:text-primary">View All <span> <FaLongArrowAltRight size={20} /> </span></p></Link>
+              <Link href={"/products"}><p className="flex shrink-0 items-center text-center text-sm sm:text-base hover:text-primary">View All <span> <FaLongArrowAltRight size={20} /> </span></p></Link>
             </div>
         <ProductSlider />
       </div>

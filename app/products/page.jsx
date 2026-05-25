@@ -19,23 +19,23 @@ const ProductPage = () => {
     setAnchorEl(null);
   };
   return (
-    <section className="py-5 bg-white">
-      <div className="container flex gap-4">
-        <div className="sidebarWrapper w-[15%]">
+    <section className="bg-white py-4 sm:py-5">
+      <div className="container flex flex-col gap-5 lg:flex-row lg:gap-4">
+        <div className="sidebarWrapper w-full lg:w-[260px] lg:shrink-0">
           <Sidebar />
         </div>
 
-        <div className="rightContent w-[85%] pl-5">
-          <div className="top-strip w-full bg-[#f1f1f1] p-2 rounded-md h-12 flex items-center justify-between">
+        <div className="rightContent w-full lg:flex-1 lg:pl-5">
+          <div className="top-strip w-full bg-[#f1f1f1] p-3 rounded-md flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <span className="text-[14px] text-gray-700 px-2 font-[600]">
               There are 25 Products.
             </span>
-            <div className="flex items-center gap-3">
-              <span className="text-[14px] text-gray-700 font-[600]">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+              <span className="text-[14px] text-gray-700 font-[600] px-2 sm:px-0">
                 Sort by
               </span>
               <Button
-                className="!bg-white !capitalize !text-gray-700 !py-[4px]"
+                className="!bg-white !capitalize !text-gray-700 !py-[4px] !text-[13px] sm:!text-[14px]"
                 onClick={handleClick}
               >
                 {sortBy}
@@ -47,14 +47,15 @@ const ProductPage = () => {
                 onClose={handleClose}
                 slotProps={{}}
               >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
-                <MenuItem onClick={handleClose}>Logout</MenuItem>
+                <MenuItem onClick={handleClose}>A to Z size</MenuItem>
+                <MenuItem onClick={handleClose}>Z to A size</MenuItem>
+                <MenuItem onClick={handleClose}>High to Low</MenuItem>
+                <MenuItem onClick={handleClose}>Low to High</MenuItem>
               </Menu>
             </div>
           </div>
 
-          <div className="grid grid-cols-5 gap-5 my-5">
+          <div className="my-5 grid grid-cols-1 gap-4 min-[480px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 xl:gap-5">
             <ProductItem />
             <ProductItem />
             <ProductItem />
@@ -64,15 +65,14 @@ const ProductPage = () => {
             <ProductItem />
             <ProductItem />
             <ProductItem />
-             <ProductItem />
             <ProductItem />
-             <ProductItem />
+            <ProductItem />
+            <ProductItem />
             <ProductItem />
           </div>
 
-          <div className="flex items-center justify-center mt-5 py-5">
+          <div className="flex items-center justify-center mt-5 py-5 overflow-x-auto">
             <Stack spacing={2}>
-            
               <Pagination count={10} size="large" />
             </Stack>
           </div>

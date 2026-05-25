@@ -15,8 +15,16 @@ const Banners = () => {
       <section className="Banners py-4 bg-white">
         <div className="container">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={10}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
             pagination={{
               clickable: true,
             }}

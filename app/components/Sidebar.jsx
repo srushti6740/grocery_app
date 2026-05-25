@@ -20,8 +20,8 @@ const Sidebar = () => {
   const [price, setPrice] = useState([0, 30000]);
 
   return (
-    <aside className="sticky top-[150px]">
-      <div className="box">
+    <aside className="lg:sticky lg:top-[150px]">
+      <div className="box rounded-md border border-gray-100 bg-white p-3 shadow-sm lg:border-0 lg:p-0 lg:shadow-none">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-[16px] font-[600] text-gray-700">
             Shop by Category
@@ -34,7 +34,7 @@ const Sidebar = () => {
           </Button>
         </div>
         <Collapse isOpened={isOpenFilter}>
-          <div className="scroll overflow-scroll max-h-[250px]">
+          <div className="scroll max-h-[220px] overflow-y-auto overflow-x-hidden lg:max-h-[250px]">
             <FormGroup>
               <FormControlLabel
                 control={<Checkbox />}
@@ -79,7 +79,7 @@ const Sidebar = () => {
             max={30000}
             step={5}
           />
-          <div className="flex item-center justify-between mt-2">
+          <div className="flex item-center justify-between mt-2 text-sm">
             <span>${price[0]}</span>
             <span>${price[1]}</span>
           </div>

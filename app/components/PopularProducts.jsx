@@ -15,14 +15,14 @@ const PopularProducts = () => {
     <div>
       <section className="bg-white py-5">
         <div className="container">
-          <div className="flex item-center justify-between">
-            <div className="col1 w-[40%]">
+          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <div className="col1 w-full md:w-[40%]">
               <h2 className="text-[20px] text-gray-800 font-[600]">
                 Popular Products
               </h2>
-              <p>Do not miss the current offer</p>
+              <p className="text-sm text-gray-600">Do not miss the current offer</p>
             </div>
-            <div className="col2 w-[60%] flex item-center justify-end">
+            <div className="col2 w-full md:w-[60%] flex md:items-center md:justify-end overflow-hidden">
               <Tabs
                 value={value}
                 onChange={handleChange}

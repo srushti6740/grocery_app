@@ -14,8 +14,26 @@ const ProductSlider = () => {
   return (
     <div className='productSlider py-4'>
        <Swiper
-        slidesPerView={6}
-        spaceBetween={30}
+        slidesPerView={1.2}
+        spaceBetween={12}
+        breakpoints={{
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 14,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 18,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 22,
+          },
+          1280: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+          },
+        }}
         pagination={{
           clickable: true,
         }}

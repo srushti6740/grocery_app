@@ -21,21 +21,21 @@ const HomeSlider = () => {
         }} modules={[Navigation, Autoplay]} className="mySwiper">
             <SwiperSlide>
             <div className='item'>
-                <Image src={"/slider.png"} alt="slider" width={1344} height={514} className='w-full'>
+                <Image src={"/slider.png"} alt="slider" width={1344} height={514} className='w-full rounded-md object-cover aspect-[16/8] sm:aspect-[16/6] lg:aspect-[1344/514]'>
 
                 </Image>
             </div>
             </SwiperSlide>
              <SwiperSlide>
             <div className='item'>
-                <Image src={"/slider.png"} alt="slider" width={1344} height={514} className='w-full'>
+                <Image src={"/slider.png"} alt="slider" width={1344} height={514} className='w-full rounded-md object-cover aspect-[16/8] sm:aspect-[16/6] lg:aspect-[1344/514]'>
 
                 </Image>
             </div>
             </SwiperSlide>
              <SwiperSlide>
             <div className='item'>
-                <Image src={"/slider.png"} alt="slider" width={1344} height={514} className='w-full'>
+                <Image src={"/slider.png"} alt="slider" width={1344} height={514} className='w-full rounded-md object-cover aspect-[16/8] sm:aspect-[16/6] lg:aspect-[1344/514]'>
 
                 </Image>
             </div>

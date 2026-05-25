@@ -10,17 +10,19 @@ const Header = () => {
     <div className="headerWrapper py-3 sticky top-0 z-50 bg-white ">
     
     <header className="border-b-[1px] border-[rgba(0,0,0,0.1)]">
-      <div className="container flex items-center justify-between py-3">
-        <div className="logo">
+      <div className="container flex flex-wrap items-center justify-between gap-3 py-3 lg:flex-nowrap">
+        <div className="logo shrink-0">
           <Link href={"/"}>
-            <img src={"/logo.png"} width={230} height={61} alt="logo"></img>
+            <img src={"/logo.png"} width={230} height={61} alt="logo" className="w-[170px] sm:w-[210px] lg:w-[230px]"></img>
           </Link>
         </div>
 
-        <Search />
+        <div className="order-3 w-full lg:order-none lg:flex-1 lg:px-4">
+          <Search />
+        </div>
 
-        <div className="flex items-center gap-5">
-          <div className="flex items-center gap-3">
+        <div className="flex shrink-0 items-center gap-4 sm:gap-5">
+          <div className="hidden sm:flex items-center gap-3">
             <Link href={"/login"} className="hover:text-primary">
               Login
             </Link>
