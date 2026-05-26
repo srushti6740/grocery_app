@@ -133,7 +133,7 @@ const ProductDetails = () => {
              <Rating name="half-rating" defaultValue={5} precision={0.5} className="my-3" />
 
              <div className="btnWrapper">
-              <Button className=" !px-5 !py-2 !bg-primary !text-white">Submit Review</Button>
+              <Button className="!px-5 !py-2 !bg-primary !text-white">Submit Review</Button>
              </div>
              </form>
           </div>
