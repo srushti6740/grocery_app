@@ -99,3 +99,11 @@ overflow: auto;
     display:none;
   }
 }
+
+.myAcc .active::before{
+  content:''; width:3px;  height: 40px;; position:absolute; background:#02B290;
+}
+
+.myAcc .active svg{
+  color:#02B290 !important;
+}
